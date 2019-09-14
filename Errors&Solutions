@@ -2,20 +2,33 @@
 https://gsamaras.wordpress.com/code/spark-container-exited-with-a-non-zero-exit-code-143/
 
 
-
-ERROR [SIGTERM handler] [ApplicationMaster] [PROCESS_ID=] [SUB_PROCESS_ID=] - RECEIVED SIGNAL TERM
+************************************************************
+1)ERROR [SIGTERM handler] [ApplicationMaster] [PROCESS_ID=] [SUB_PROCESS_ID=] - RECEIVED SIGNAL TERM
 Increase spark.executor.memory
-Future time out exception
+************************************************************
+2)Future time out exception
 spark.executor.heartbeatInterval=4800s
 spark.network.timeout=5000s
-Container killed on request. Exit code is 143
+************************************************************
+3)Container killed on request. Exit code is 143
 spark.yarn.executor.memoryOverhead          4096
 spark.yarn.driver.memoryOverhead            8192
 spark.executor.memory                       4G
 spark.driver.memory                         4G
 spark.executor.cores                        4
 spark.driver.cores                          4
-
+************************************************************
 
 
 https://developer.ibm.com/hadoop/2016/07/18/troubleshooting-and-tuning-spark-for-heavy-workloads/
+
+************************************************************
+4)issue while using collect or how we can get all executors data to drive effeciently?
+In you are project if it is mandatory to use collect then we can use toLocalIterator 
+https://stackoverflow.com/questions/44348670/which-is-faster-in-spark-collect-or-tolocaliterator
+************************************************************
+2)Furture time out exception:
+A)increase heartbeat.time.intervel:4800s
+increase network time out exception:5000
+
+************************************************************
