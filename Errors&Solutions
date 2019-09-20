@@ -26,6 +26,7 @@ https://developer.ibm.com/hadoop/2016/07/18/troubleshooting-and-tuning-spark-for
 4)issue while using collect or how we can get all executors data to drive effeciently?
 In you are project if it is mandatory to use collect then we can use toLocalIterator 
 https://stackoverflow.com/questions/44348670/which-is-faster-in-spark-collect-or-tolocaliterator
+dataframe.toLocalIterator
 ************************************************************
 2)Furture time out exception:
 A)increase heartbeat.time.intervel:4800s
