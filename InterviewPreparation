@@ -1,0 +1,98 @@
+java
+1)oops
+2)collections
+3)string
+4)
+
+scala
+1)companion object
+2)methods and function
+3)hof
+4)oops
+5)case class
+6)implicites
+7)collections
+8)case statement in scala
+9)string manipulation
+10)json praser in scala
+11)mondas in scala
+12)curring functions in scala
+13)Scala Testing 
+spark
+1)rdd
+2)df
+3)ds
+4)joins
+5)window functions
+6)reding json ,xml
+7)writting in to hive table,cassandra
+8)streaming
+9)performance issues
+10)collect and toCollectIterator()
+11)common errors and solutions
+12)structure of spark ?how jobs and stages are created
+13)what is the cluster size ?
+14)how we decide number of executors and number of cores
+15)what is the difference between dag and lineage graph in spark?
+16)what is broad cast variable?
+17) what is udaf function is spark how we can use?
+18) how to register udf in spark
+19)how you deploy and shedule jobs in prod?
+20)difference b/w spark 1.6 and 2.x
+21)scala test cases
+22)spark testcases
+
+
+hive
+1)ddl's dml's,alter commands
+2)file formate
+3)external table vs managed tables
+4)joins
+5)load data in to tables
+6)bucktting,partition
+7) what is the use of stage tables
+8)what is orc dump
+9)case and when in hive
+10) how to over write hive table?
+11)hive functions like collect_set,collect_list,window function,subqueires,inline quries
+12)how to drop partitions with out going partition into trash?
+13)distcp command
+14)what is the difference b/w sortby and orderby ,clusterby, distributed by
+15)joins in hive
+16)optimization technicies in hive
+
+hdfs
+1)how to check size of tables
+2)how to copy data from one cluster to othere
+3) what is the differnece between cp and copyToLocal
+4)
+
+
+python
+.....
+
+1)how to use subprocess
+2)
+
+
+1)print only even number charecters?
+val s = "Hello";
+val sb = new StringBuilder();
+for (i <- 0 to  s.length) {
+if (i%2 == 0 ){
+  val c = s.charAt(i);
+  print(c)
+  }
+}
+print only odd number charecters?
+val s = "Hello"
+val sb = new StringBuilder();
+for (i <- 0 to  s.length) {
+if (i%2 != 0 ){
+  val c = s.charAt(i);
+  println(c)
+  }
+}
+
+2)difference between forAll and forEach
+https://examples.javacodegeeks.com/jvm-languages/scala/scala-forall-example/
