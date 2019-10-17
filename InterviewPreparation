@@ -61,12 +61,21 @@ hive
 14)what is the difference b/w sortby and orderby ,clusterby, distributed by
 15)joins in hive
 16)optimization technicies in hive
+17)compression technics
+18)why snappy not used ?
+19)what is syntax to execute a file with out entering hive?
+20)how to calculate duplicate values in hive tables? And how to you resolve it?
+21)How to update hive table?
+A)By using case when and insert overwrite
+insert overwrite table idaa_pipeline. di_amp_subscription_state_dqm_bs_backup1  partition(rt,bt,bsk ) Select 
+total_records,total_rules_applied,retry,failed,pass,rule_name,rule_type,product_name,subscription_type,subscription_mode,store_front_id,current_state,platform_name,
+case when trim(reporting_date)= '' then NULL else reporting_date end as reporting_date ,etl_process_run_id,rt,bt,bsk from idaa_pipeline. di_amp_subscription_state_dqm_bs  where bsk=114639877
 
 hdfs
 1)how to check size of tables
 2)how to copy data from one cluster to othere
 3) what is the differnece between cp and copyToLocal
-4)
+4)how do we delete files in Hadoop directory with out actually deleting the directory it self?
 
 
 python
